@@ -1,31 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import Welcome from "./components/Welcome/Welcome"
-import Form from "./components/Form/Form";
+import ScoreBoard from "./modules/scoreboard/containers/scoreboard.container";
 
-function App() {
+const Apps = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <div>
-        <Form />
-      </div>
+
+    <div>
+      <ScoreBoard></ScoreBoard>
     </div>
   );
 }
 
-export default App;
+export default Apps;
